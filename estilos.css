@@ -126,7 +126,10 @@ body{
 .botones {
   margin: 2rem 0;
   text-align: center;
+
 }
+
+
 
 /* estilo de los botones, fondo naranja pollito, texto marron, redondito */
 .botones a {
@@ -143,8 +146,8 @@ body{
 
 /* cuando pasa el mouse, cambia de color y texto blanco */
 .botones a:hover {
-  background-color: #ffa311 !important;
-  color: white;
+  background-color: #411f0f !important;
+  color: #fca311;
 }
 
 /* pa meter videos o maps o lo q sea, centrado, redondeao, sin borde */
