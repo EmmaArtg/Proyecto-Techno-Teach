@@ -2,67 +2,60 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <title>Ubicación - El Rancho de Juancho</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="index.css.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <title>El Rancho de Juancho</title>
+  <link rel="stylesheet" href="index.css.css">
 </head>
 
 <body>
 
-  <!-- navbar, lo de arriba q siempre se ve -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">   
+  <!-- navbar, esa barrita de arriba con los links -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <!-- el nombrecito, q si le das click te manda al inicio -->
+      <!-- el nombre del local, y lo manda pa la pagina de inicio -->
       <a class="navbar-brand fw-bold fs-4" href="index1.html.html">El Rancho de Juancho</a>
-      <!-- botoncito de hamburguesa pa celus -->
+      <!-- el boton de hamburguesa pa celus -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- los links q salen a la derecha -->
       <div class="collapse navbar-collapse justify-content-end" id="navContent">
         <ul class="navbar-nav">
-          <!-- cada item lleva a una pagina -->
+          <!-- cada nav-item manda a su pagina -->
           <li class="nav-item"><a class="nav-link active" href="index1.html.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="indexmenu.html">Menú</a></li>
-          <li class="nav-item"><a class="nav-link" href="indexubicacion.html">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="indexmenu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link active" href="indexubicacion.html">Ubicación</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- seccion principal, esa q dice bienvenido y todo eso -->
-  <section class="hero-section text-dark ">
-    <!-- titulo grande, parte en color normal y parte con clase pa resaltar -->
-    <h1> Tu Destino<span class=brand-highlight> Gastronomico</span></h1>
-    <!-- texto de bienvenida, con filosofia de cocina y amor -->
-    <p class="parrafo">
-      Bienvenidos a <strong>El Rancho de Juancho</strong>, un rincón donde los sabores
-      auténticos se preparan con el alma. Aquí, cada platillo nace con
-      tradición y cariño, porque creemos que la mejor comida es la que llega
-      "De la Cocina al Corazón". Te esperamos con la
-      sazón de siempre y la calidez que nos distingue.
-    </p>
+  <!-- seccion principal, donde va el mapa y video -->
+  <section class="hero-section text-dark">
+    <div class="container text-center">
+      <!-- titulo con parte resaltada -->
+      <h1 class="mb-4">¿Cómo llegar a <span class="brand-highlight">El Rancho de Juancho</span>?</h1>
+      <!-- botones pa abrir maps y waze -->
+      <div class="botones mb-5">
+        <a href="https://maps.app.goo.gl/kDuxxq44roqpiBrd6" target="_blank">📍 Ver en Google Maps</a>
+        <a href="https://waze.com/ul/hd34k7302f" target="_blank">🚗 Abrir en Waze</a>
+      </div>
+
+      <!-- video pa q vean el lugar, se ve directo de youtube -->
+      <h2 class="mb-4">Conócenos en Video</h2>
+      <iframe src="https://www.youtube.com/embed/JeN8fxWFb_A" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <!-- el footer de abajo, con info pa contacto y redes -->
-  <footer class="text-white py-5 bg-dark">
-      <div class="container">
-          <div class="row mb-4">
-              <div class="col-12">
-                <!-- el nombre otra vez por si acaso -->
-                <h3 class="fw-bold">El Rancho de Juancho</h3>
-              </div>
-          </div>
-
-  <!-- repite footer por si acaso, parece doble pero bueno ahi va -->
+  <!-- footer, lo de abajo con info del sitio -->
   <footer class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
-
-        <!-- colum1 info de contacto, email y whatsapp -->
+        
+        <!-- colum1, correo y whatsapp -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Información</h5>
           <ul class="list-unstyled">
@@ -73,7 +66,6 @@
               </a>
             </li>
             <li>
-              <!-- wa directo, con iconito y numero -->
               <a href="https://wa.me/3205000990" target="_blank" class="text-white fs-6 me- text-decoration-none">
                 <i class="bi bi-whatsapp"></i>
                 +57 320 500 0990
@@ -82,7 +74,7 @@
           </ul>
         </div>
 
-        <!-- colum2 red social, solo insta pero se ve bien -->
+        <!-- colum2, el instagram -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Síguenos</h5>
           <div class="d-flex">
@@ -92,7 +84,7 @@
           </div>
         </div>
 
-        <!-- colum3 direccion fisica y horarios -->
+        <!-- colum3, direccion y horarios -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Dirección</h5>
           <p class="mb-0">
@@ -100,13 +92,12 @@
             Abierto de Viernes a Domingo: 5:00 PM - 12:00 AM
           </p>
         </div>
-
       </div>
 
-      <!-- linea separadora -->
+      <!-- linea finita pa separar -->
       <hr class="border-light" />
 
-      <!-- el copyright, con año, nombre y NIT pa legalidad -->
+      <!-- parte final legal-->
       <div class="text-center pt-3">
         © 2025 <strong>El Rancho de Juancho</strong>. Todos los derechos reservados.<br>
         NIT: 81710002
@@ -114,6 +105,7 @@
     </div>
   </footer>
 
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Rancho de Juancho</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="index.css.css">
+</head>
+
+<body>
+
+  <!-- navbar, la barrita de arriba con los links -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- el nombre del local, linkea pa el inicio -->
+      <a class="navbar-brand fw-bold fs-4" href="index1.html.html">El Rancho de Juancho</a>
+      <!-- boton de hamburguesa pa pantallas chicas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- links del menú -->
+      <div class="collapse navbar-collapse justify-content-end" id="navContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index1.html.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="indexmenu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="indexubicacion.html">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- seccion con flip-cards, pa q la gente vea la comida y se antoje -->
+ <section class="hero-section">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+
+      <!-- tarjetica 1, hamburguesa, tiene imagen (q falta) y descripcion -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="#" alt="Hamburguesa Ranchera">
+            </div>
+            <div class="flip-card-black">
+              <div>
+                <h4>Hamburguesa Ranchera</h4>
+                <p>Carne 150g, tocineta, queso doble y papas a la francesa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tarjetica 2, salchipapa pero sin descripcion (pendiente pa llenar) -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="#" alt="Salchipapa Mixta">
+            </div>
+            <div class="flip-card-black">
+              <div>
+                <h4>Salchipapa Mixta</h4>
+                <p></p> <!-- falta decir q lleva salchi y papa, obvio -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tarjetica 3, arepa rellena, pero tampoco dice de q (misteriosa) -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="#" alt="Arepa Rellena">
+            </div>
+            <div class="flip-card-black">
+              <div>
+                <h4>Arepa Rellena</h4>
+                <p></p> <!-- poner q tiene carne, pollo, o puro sabor -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer con toda la info pa q la gente no se pierda -->
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- colum1: correo y WhatsApp pa pedidos o dudas -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">Información</h5>
+        <ul class="list-unstyled">
+          <li>
+            <i class="bi bi-envelope me-2"></i>
+            <a href="mailto:elrancho@email.com" class="text-white text-decoration-none">
+              elrancho@email.com
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/3205000990" target="_blank" class="text-white fs-6 text-decoration-none">
+              <i class="bi bi-whatsapp"></i>
+              +57 320 500 0990
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- colum2: insta pa subir las promos y platos del día -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">Síguenos</h5>
+        <div class="d-flex">
+          <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4 me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- colum3: dirección pa q lleguen sin excusas -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">Dirección</h5>
+        <p class="mb-0">
+          Cra. 14 #4-21, Girardota, Antioquia<br>
+          Abierto de Viernes a Domingo: 5:00 PM - 12:00 AM
+        </p>
+      </div>
+
+    </div>
+
+    <!-- linea q separa bonito -->
+    <hr class="border-light" />
+    <div class="text-center pt-3">
+      © 2025 <strong>El Rancho de Juancho</strong>. Todos los derechos reservados.<br>
+      NIT: 81710002
+    </div>
+  </div>
+</footer>
+
+<!-- script pa q el navbar funcione y no se trabe en celular -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
