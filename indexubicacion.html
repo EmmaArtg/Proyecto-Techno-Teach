@@ -12,26 +12,33 @@
 
 <body>
 
-  <!-- navbar, esa barrita de arriba con los links -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <!-- el nombre del local, y lo manda pa la pagina de inicio -->
-      <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">El Rancho de Juancho</a>
-      <!-- el boton de hamburguesa pa celus -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- los links q salen a la derecha -->
-      <div class="collapse navbar-collapse justify-content-end" id="navContent">
-        <ul class="navbar-nav">
-          <!-- cada nav-item manda a su pagina -->
-          <li class="nav-item"><a class="nav-link active" href="indexinicio.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="indexmenu.html">Menú</a></li>
-          <li class="nav-item"><a class="nav-link active" href="indexubicacion.html">Ubicación</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">El Rancho de Juancho</a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="indexinicio.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="indexmenu.html">Menú</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexubicacion.html">Ubicación</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- seccion principal, donde va el mapa y video -->
   <section class="hero-section text-dark">
