@@ -43,30 +43,36 @@
 <!-- Sección principal -->
 <section class="hero-section text-dark container mt-5">
   <div class="row align-items-center">
+
+  <h2>Formulario de Contacto</h2>
+
+  <form action="/procesar.php" method="post">
     
-    <!-- Columna del texto -->
-    <div class="col-12 col-md-6 col-sm-12">
-      <h1>Tu Destino<span class="brand-highlight"> Gastronómico</span></h1>
-      <p class="parrafo">
-        Bienvenidos a <strong>El Rancho de Juancho</strong>, un rincón donde los sabores
-        auténticos se preparan con el alma. Aquí, cada platillo nace con
-        tradición y cariño, porque creemos que la mejor comida es la que llega
-        "De la Cocina al Corazón". Te esperamos con la
-        sazón de siempre y la calidez que nos distingue.
-      </p>
-    </div>
+    <!-- Nombre -->
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <!-- Correo electrónico -->
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Número de teléfono -->
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono"><br><br>
+    
+    <!-- Asunto -->
+    <label for="asunto">Asunto:</label><br>
+    <input type="text" id="asunto" name="asunto"><br><br>
+    
+    <!-- Mensaje -->
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea><br><br>
+    
+    <!-- Botón de enviar -->
+    <button type="submit" class="submit">Enviar</button>
 
-    <!-- Columna de la imagen fija -->
-    <div class="col-12 col-md-6 col-sm-12 d-flex justify-content-center">
-      <img src="foto1.jpeg" class="img-fluid rounded shadow" alt="Plato típico destacado" style="max-width: 100%; height: auto;">
-    </div>
-
-  </div>
+  </form>
 </section>
-
-
-
-
 
   <!-- repite footer por si acaso-->
   <footer class="bg-dark text-white py-5">

@@ -12,165 +12,345 @@
 </head>
 
 <body>
-
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="fw-bold fs-4 loguito text-decoration-none" href="indexinicio.html">
-      <img src="logo.png" alt="logo" widht="70" height="70"> El Rancho De Juancho
-    </a>
-
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menú colapsable -->
-<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <strong><ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="indexmenu.html">Menú</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="indexubicacion.html">Ubicación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="indexhistoria.html">Historia</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
- <!-- seccion con flip-cards, pa q la gente vea la comida y se antoje -->
- <section class="hero-section">
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <!-- botones pa abrir maps y waze -->
-      <h1 class="text-dark">Conoce nuestros <span class="brand-highlight">Productos</span> aquí 👇</h1>
-      <div class="botones mb-5">
-        <a href="https://drive.google.com/file/d/13aB5t8BoKKd1VM_B7wKWWNM3tVnBlMEz/view?usp=sharing" target="_blank">📖 Menú</a>
-      </div>
-
-      <!-- tarjetica 1, hamburguesa, tiene imagen (q falta) y descripcion -->
-      <div class="col-md-4 mb-4">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="Papas.jpeg" alt="papas">  
-            </div>
-            <div class="flip-card-black">
-              <div>
-                <h4>Papas con Pollo</h4>
-                <p>Papas, salchica, ensalada, huevo de codorniz y pollo.</p>
-                <strong>$16.000</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- tarjetica 2, salchipapa pero sin descripcion (pendiente pa llenar) -->
-      <div class="col-md-4 mb-4">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="patacon.jpeg" alt="patacon">
-            </div>
-            <div class="flip-card-black">
-              <div>
-                <h4>Patacón Mixto</h4>
-                <p>Guacamole, carne de res, pollo, maicitos, tocineta y queso derretido.</p>
-                <strong>$22.000</strong> <!-- falta decir q lleva salchi y papa, obvio -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- tarjetica 3-->
-      <div class="col-md-4 mb-4">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="limonadac.jpeg" alt="limonadac">
-            </div>
-            <div class="flip-card-black">
-              <div>
-                <h4>Limonada de cereza</h4>
-                <p>Limón, cereza y cóctel de cereza.</p> <!-- poner q tiene -->
-                <strong>$8.000</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- footer con toda la info pa q la gente no se pierda -->
-<footer class="bg-dark text-white py-5">
-  <div class="container">
-    <div class="row">
-
-      <!-- colum1: correo y WhatsApp pa pedidos o dudas -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold mb-3">Información</h5>
-        <ul class="list-unstyled">
-          <li>
-            <i class="bi bi-envelope me-2"></i>
-            <a href="mailto:elrancho@email.com" class="text-white text-decoration-none">
-              elrancho@email.com
-            </a>
+  <nav id="navbar" class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">
+        <img src="logo.png" alt="logo" width="70" height="65"><span class="brand-highlight"> El Rancho De Juancho</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="indexmenu.html">Menú</a>
           </li>
-          <li>
-            <a href="https://wa.me/3205000990" target="_blank" class="text-white fs-6 text-decoration-none">
-              <i class="bi bi-whatsapp"></i>
-              +57 320 500 0990
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="indexubicacion.html">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="indexhistoria.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Escribenos PQRSF</a>
           </li>
         </ul>
       </div>
+    </div>
+  </nav>
 
-      <!-- colum2: insta pa subir las fotos -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold mb-3">Síguenos</h5>
-        <div class="d-flex ">
-          <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3" target="_blank">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4 me-3">
-            <i class="bi bi-instagram"></i>
-          </a>
+  <section class="menu-section">
+    <div class="container">
+      <h2 class="text-center section-title">Nuestra sazón</h2>
+      <img src="hamburguesa.png" alt="hamburguesa" width="150" height="150"><span
+        class="brand-highlight">Hamburguesas</span>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img src="clasica.jpeg" alt="Clasica" style="background-size: cover;">
+            <div class="card-body">
+              <h4>Clasica</h4>
+              <p>
+                Carne artesanal, pan de hamburguesa, tocineta,
+                queso, lechuga, tomate, pepino caramelizado,
+                ripio de papa</p>
+              <strong>$16.000</strong>
+            </div>
+          </div>
         </div>
-      
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img src="doble.jpeg" alt="Bruschetta">
+            <div class="card-body">
+              <h4>Doble</h4>
+              <p>Doble carne artesanal, doble queso, doble
+                tocineta, lechuga. tomate, pepino, ripio de papa
+                caramelizado, pan de hamburguesa.</p>
+              <strong>$22.000</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img src="combo.jpeg" alt="Carpaccio">
+            <div class="card-body">
+              <h4>Combo</h4>
+              <p>Doble carne artesanal, doble queso, doble
+                tocineta, lechuga. tomate, pepino, ripio de papa
+                caramelizado, pan de hamburguesa y porción de
+                papas.</p>
+              <strong>$26.000</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="text-center section-title"></h2>
+      <img src="perro.png" alt="perro" width="200" height="200"> Perros
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img
+              src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Sopa de tomate">
+            <div class="card-body">
+              <h4>Clásico</h4>
+              <p>Pan, salchicha, ensalada de repollo y ripio de
+                papa.</p>
+              <strong>$9.000</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img
+              src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Bruschetta">
+            <div class="card-body">
+              <h4>Especial</h4>
+              <p>Pan, salchicha, ensalada de repollo, ripio de
+                papa, queso y tocineta.</p>
+              <strong>$12.000</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img
+              src="https://images.pexels.com/photos/3662126/pexels-photo-3662126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Carpaccio">
+            <div class="card-body">
+              <h4>Perra Clasíca</h4>
+              <p>Pan, tocineta, ripio de papas, ensalada de repollo, queso.</p>
+              <strong>$13.000</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="menu-card">
+            <img src="" alt="">
+            <div class="card-body">
+              <h4>Perra Especial</h4>
+              <p>Pan, tocineta, ripio de papas, ensalada de repollo, queso y porción de papas.</p>
+              <strong>$17.000</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center section-title"></h2>
+        <img src="papas.png" alt="papas" width="180" height="200">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Sopa de tomate">
+              <div class="card-body">
+                <h4>Sencillas</h4>
+                <p>Papas fritas, salchichas, huevo de codorniz.</p>
+                <strong>$11.000</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Bruschetta">
+              <div class="card-body">
+                <h4>Especiales</h4>
+                <p>Papas fritas, salchichas, ensalada de repollo
+                  dulce, tocineta, queso y huevo de codorniz</p>
+                <strong>$17.000</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/3662126/pexels-photo-3662126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Carpaccio">
+              <div class="card-body">
+                <h4>Súper Especial</h4>
+                <p>Papas fritas, salchichas, tocineta, 2 proteínas de
+                  elección (cerdo, res, pollo) queso y huevo de
+                  codorniz.</p>
+                <strong>$23.000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center section-title"></h2>
+        <img src="patacon.png" alt="hamburguesa" width="150" height="150">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Sopa de tomate">
+              <div class="card-body">
+                <h4>Clásico</h4>
+                <p>Patacón, guacamole, una proteína de elección
+                  (res, pollo, cerdo) maicitos, tocineta y queso</p>
+                <strong>$17.000</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Bruschetta">
+              <div class="card-body">
+                <h4>Especial</h4>
+                <p>Patacón, guacamole, dos proteína de elección
+                  (res, pollo, cerdo) maicitos, tocineta y queso.</p>
+                <strong>$22.000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center section-title"></h2>
+        <img src="arepa.png" alt="arepa" width="150" height="200">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Sopa de tomate">
+              <div class="card-body">
+                <h4>Sencilla</h4>
+                <p>Arepa, guacamole, queso, tocineta, maicitos una
+                  proteína de elección (carne, res, cerdo).</p>
+                <strong>$17.000</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Bruschetta">
+              <div class="card-body">
+                <h4>Especial</h4>
+                <p>Arepa, guacamole, queso, tocineta, maicitos dos
+                  proteína de elección (carne, res, cerdo).</p>
+                  <strong>$22.000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center section-title">Menú</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Sopa de tomate">
+              <div class="card-body">
+                <h4>Sencilla</h4>
+                <p>Arepa, guacamole, queso, tocineta, maicitos una
+                  proteína de elección (carne, res, cerdo).</p>
+                <strong>$17.000</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Bruschetta">
+              <div class="card-body">
+                <h4>Nombre del plato</h4>
+                <p>Esta es la descripción del artículo en el que te encuentras.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="menu-card">
+              <img
+                src="https://images.pexels.com/photos/3662126/pexels-photo-3662126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Carpaccio">
+              <div class="card-body">
+                <h4>Nombre del plato</h4>
+                <p>Esta es la descripción del artículo en el que te encuentras.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- footer con toda la info pa q la gente no se pierda -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- colum1: correo y WhatsApp pa pedidos o dudas -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Información</h5>
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-envelope me-2"></i>
+              <a href="mailto:emanuelarteaga032004@gmail.com" class="text-white text-decoration-none" target="_blank">
+                emanuelarteaga032004@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/3205000990" target="_blank" class="text-white fs-6 text-decoration-none">
+                <i class="bi bi-whatsapp"></i>
+                +57 320 500 0990
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- colum2: insta pa subir las fotos -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Síguenos</h5>
+          <div class="d-flex ">
+            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3"
+              target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4 me-3">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- colum3: dirección pa q lleguen -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Dirección</h5>
+          <p class="mb-0">
+            Cra. 14 #4-21, Girardota, Antioquia<br>
+            Abierto de Viernes a Domingo: 5:00 PM - 12:00 AM
+          </p>
+        </div>
+
       </div>
 
-      <!-- colum3: dirección pa q lleguen -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold mb-3">Dirección</h5>
-        <p class="mb-0">
-          Cra. 14 #4-21, Girardota, Antioquia<br>
-          Abierto de Viernes a Domingo: 5:00 PM - 12:00 AM
-        </p>
+      <!-- linea q separa bonito -->
+      <hr class="border-light" />
+      <div class="text-center pt-3">
+        © 2025 <strong>El Rancho de Juancho</strong>. Todos los derechos reservados.<br>
+        NIT: 81710002
       </div>
-
     </div>
+  </footer>
 
-    <!-- linea q separa bonito -->
-    <hr class="border-light" />
-    <div class="text-center pt-3">
-      © 2025 <strong>El Rancho de Juancho</strong>. Todos los derechos reservados.<br>
-      NIT: 81710002
-    </div>
-  </div>
-</footer>
-
-<!-- script pa q el navbar funcione y no se trabe en celular -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- script pa q el navbar funcione y no se trabe en celular -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -5,10 +5,9 @@ body{
     text-shadow: 6px 6px 10px rgba(0,0,0,0.4);
 
 }
-
 /* esto resalta algo q se llama brand no se, pero el color es como mostaza brillante y una sombra pa q se note */
 .brand-highlight{
-    color:#F9B233;
+    color:#ff9900;
     border-color:#000;
 }
 
@@ -17,18 +16,40 @@ body{
   color: #E8D9C2;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
-
-/* los links del nav, blanco pa q se vea encima del fondo y espaciados */
-.nav-link{
-    color:#fff !important;
-    margin-right: 15px;
+/* --- NAVBAR (MENÚ DE NAVEGACIÓN) --- */
+#navbar {
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* cuando pasa el mouse cambia a naranja encendido, no me pregunte cual naranja es ese */
-.nav-link:hover{
-    color: rgb(244, 136, 43) !important;
+.navbar-brand {
+  color: #212529 !important; /* Color oscuro para el logo */
 }
 
+.nav-link {
+  color: #fff !important; /* Color gris oscuro para los enlaces */
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff9900 !important;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ff9900;
+}
 /* esta seccion es la principal, la portada, toda centrada y alta, fondo q se repite no */
 .hero-section{
     background-size: cover;
@@ -68,62 +89,39 @@ body{
     color: #fca311;
 }
 
-/* aqui empieza la locura de las flipcard, carta q se da la vuelta, parece magia pero css */
-.flip-card{
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* pa q tenga esa profundidad */
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra más definida */
+  overflow: hidden; /* Para que la imagen respete el borde redondeado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* parte interna, q es la q se voltea cuando pasa el mouse */
-.flip-card-inner{
-    position:relative;
-    width: 100%;
-    height:100%;
-    transition: transform 0.8s ease;
-    transform-style:preserve-3d;
+.menu-card:hover {
+  transform: translateY(-5px); /* Efecto de levantar la tarjeta */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* cuando se pasa el mouse encima, gira */
-.flip-card:hover .flip-card-inner {
-    transform : rotateY(180deg);
-}   
-
-/* las dos caras de la carta, la q se ve y la de atras */
-.flip-card-front, .flip-card-black{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility:hidden;
-    border-radius:12px;
-    overflow:hidden;
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
 }
 
-/* frente blanco, como hoja sin nada */
-.flip-card-front{
-    background-color: white;
+.menu-card .card-body {
+  padding: 20px;
 }
 
-/* la imagen q va al frente se estira y tapa todo */
-.flip-card-front img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.menu-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-/* cara de atras negra, texto centrado, pa q parezca tarjeta secreta */
-.flip-card-black{
-    background-color: black;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 15px;
-    transform: rotateY(180deg);
-    text-align: center;
+.menu-card p {
+  color: #666;
+  font-size: 0.95rem;
 }
-
 /* botones del medio, se alinean al centro y tienen margen vertical */
 .botones {
   margin: 2rem 0;
@@ -150,14 +148,38 @@ body{
 }
 
 /* pa meter videos o maps o lo q sea, centrado, redondeao, sin borde */
-/*iframe {
+iframe {
   width: 100%;
   max-width: 720px;
   height: 400px;
   border: none;
   border-radius: 10px;
   margin-top: 10px;
-}*/
+}
 .loguito{
     color:#F9B233;
+}
+.submit {
+  display: inline-block;
+  padding: 12px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #F9B233;
+  border: none;
+  border-radius: 15px;
+}
+
+.submit:hover {background-color: #411f0f}
+
+.submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+img{      
+    background-size: cover;
 }
