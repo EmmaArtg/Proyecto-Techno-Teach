@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Ubicación - El Rancho de Juancho</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="estilos.css">
 </head>
@@ -13,47 +13,54 @@
 <body>
 
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">El Rancho de Juancho</a>
+    <div class="container">
+      <a class="fw-bold fs-4 loguito text-decoration-none" href="indexinicio.html">
+        <img src="logo.png" alt="logo" widht="70" height="70"> El Rancho De Juancho
+      </a>
 
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Menú colapsable -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="indexinicio.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="indexmenu.html">Menú</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="indexubicacion.html">Ubicación</a>
-        </li>
-      </ul>
+      <!-- Menú colapsable -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <strong>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="indexmenu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexubicacion.html">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexhistoria.html">Historia</a>
+            </li>
+          </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-  <!-- seccion principal, donde va el mapa y video -->
   <section class="hero-section text-dark">
     <div class="container text-center">
       <!-- titulo con parte resaltada -->
       <h1 class="mb-4">¿Cómo llegar a <span class="brand-highlight">El Rancho de Juancho</span>?</h1>
+
       <!-- botones pa abrir maps y waze -->
       <div class="botones mb-5">
         <a href="https://maps.app.goo.gl/kDuxxq44roqpiBrd6" target="_blank">📍 Ver en Google Maps</a>
         <a href="https://waze.com/ul/hd34k7302f" target="_blank">🚗 Abrir en Waze</a>
       </div>
 
-      <!-- video pa q vean el lugar, se ve directo de youtube -->
-      <h2 class="mb-4">Conócenos en Video</h2>
-      <iframe src="https://www.youtube.com/embed/JeN8fxWFb_A" allowfullscreen></iframe>
+      <h2 class="mb-4"><strong>Conóce como llegar</strong></h2>
+      <div class="video-container mb-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JeN8fxWFb_A?si=mPB3tEIBZl1E-aJo"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
@@ -61,7 +68,7 @@
   <footer class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
-        
+
         <!-- colum1, correo y whatsapp -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Información</h5>
@@ -85,9 +92,9 @@
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Síguenos</h5>
           <div class="d-flex">
-            <a href="#" class="text-white fs-4 me-3">
-            <i class="bi bi-facebook" target="_blank"></i>
-          </a>
+            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
             <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4">
               <i class="bi bi-instagram"></i>
             </a>
@@ -118,4 +125,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

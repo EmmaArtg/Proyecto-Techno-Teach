@@ -14,7 +14,9 @@
 
   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">El Rancho de Juancho</a>
+    <a class="fw-bold fs-4 loguito text-decoration-none" href="indexinicio.html">
+      <img src="logo.png" alt="logo" widht="70" height="70"> El Rancho De Juancho
+    </a>
 
     <!-- Boton menu -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,35 +26,68 @@
 
     <!-- Menú colapsable -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="indexinicio.html">Inicio</a>
-        </li>
+      <strong><ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" href="indexmenu.html">Menú</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="indexubicacion.html">Ubicación</a>
         </li>
-      </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="indexhistoria.html">Historia</a>
+        </li>
+      </ul></strong>
     </div>
   </div>
 </nav>
 
+<!-- Sección principal -->
+<section class="hero-section text-dark container mt-5">
+  <div class="row align-items-center">
+    
+    <!-- Columna del texto -->
+    <div class="col-md-6">
+      <h1>Tu Destino<span class="brand-highlight"> Gastronómico</span></h1>
+      <p class="parrafo">
+        Bienvenidos a <strong>El Rancho de Juancho</strong>, un rincón donde los sabores
+        auténticos se preparan con el alma. Aquí, cada platillo nace con
+        tradición y cariño, porque creemos que la mejor comida es la que llega
+        "De la Cocina al Corazón". Te esperamos con la
+        sazón de siempre y la calidez que nos distingue.
+      </p>
+    </div>
 
-  <!-- seccion principal, esa q dice bienvenido y todo eso -->
-  <section class="hero-section text-dark ">
-    <!-- titulo grande, parte en color normal y parte con clase pa resaltar -->
-    <h1> Tu Destino<span class=brand-highlight> Gastronómico</span></h1>
-    <!-- texto de bienvenida-->
-    <p class="parrafo">
-      Bienvenidos a <strong>El Rancho de Juancho</strong>, un rincón donde los sabores
-      auténticos se preparan con el alma. Aquí, cada platillo nace con
-      tradición y cariño, porque creemos que la mejor comida es la que llega
-      "De la Cocina al Corazón". Te esperamos con la
-      sazón de siempre y la calidez que nos distingue.
-    </p>
-  </section>
+    <!-- Columna del carrusel -->
+    <div class="col-md-6">
+      <div id="carruselRancho" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="patacon.jpeg" class="d-block w-100" alt="Plato típico 1">
+          </div>
+          <div class="carousel-item">
+            <img src="patacon.jpeg" class="d-block w-100" alt="Plato típico 2">
+          </div>
+          <div class="carousel-item">
+            <img src="patacon.jpeg" class="d-block w-100" alt="Ambiente del restaurante">
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselRancho" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselRancho" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 
 
@@ -85,8 +120,8 @@
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Síguenos</h5>
           <div class="d-flex">
-            <a href="#" class="text-white fs-4 me-3">
-            <i class="bi bi-facebook" target="_blank"></i>
+            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3" target="_blank">
+            <i class="bi bi-facebook"></i>
           </a>
             <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4">
               <i class="bi bi-instagram"></i>

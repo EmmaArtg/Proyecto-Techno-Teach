@@ -1,13 +1,15 @@
 /* aqui el body, ponele la letra bonita y le mete un fondo q va de marron oscuro a otro marron menos feo */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #4E2A14, #A14F1E);
+    background: linear-gradient(to right, #6e3b16 , #f99b1c);
+    text-shadow: 6px 6px 10px rgba(0,0,0,0.4);
+
 }
 
 /* esto resalta algo q se llama brand no se, pero el color es como mostaza brillante y una sombra pa q se note */
 .brand-highlight{
     color:#F9B233;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    border-color:#000;
 }
 
 /* el texto normalito, clarito, sombra pa q no se pierda */
@@ -128,9 +130,6 @@ body{
   text-align: center;
 
 }
-
-
-
 /* estilo de los botones, fondo naranja pollito, texto marron, redondito */
 .botones a {
   display: inline-block;
@@ -151,11 +150,14 @@ body{
 }
 
 /* pa meter videos o maps o lo q sea, centrado, redondeao, sin borde */
-iframe {
+/*iframe {
   width: 100%;
   max-width: 720px;
   height: 400px;
   border: none;
   border-radius: 10px;
   margin-top: 10px;
+}*/
+.loguito{
+    color:#F9B233;
 }
