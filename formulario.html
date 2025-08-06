@@ -11,10 +11,10 @@
 </head>
 
 <body>
-  <nav id="navbar" class="navbar navbar-expand-lg bg-dark">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">
-        <img src="logo.png" alt="logo" width="70" height="65"><span class="brand-highlight"> El Rancho De Juancho</span>
+        <img src="img/logo.png" alt="logo" width="70" height="65"><span class="brand-highlight"> El Rancho De Juancho</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,10 @@
           <li class="nav-item">
             <a class="nav-link" href="formulario.html">Escribenos PQRSF</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grafica.html">Estadísticas</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -41,8 +45,13 @@
 
 
   <section class="hero-section text-dark container mt-5">
+    <div class="row justify-content-center aling-items-center">
+      <div class="col-md-3 d-none d-md-block text-center">
+      <img src="img/hamburguesa.png" alt="hamburguesa" width="200" height="200">
+    </div>
+    <div class="col-md-6">
     <div class="container2">
-      <h1>Formulario PQRSF</h1>
+      <h1 class="text-dark  ">Formulario PQRSF</h1>
       <form action="#" method="post">
         <div class="form-group">
           <label for="tipo_solicitud" class="required">Indique el tipo de Solicitud</label>
@@ -52,6 +61,8 @@
             <option value="queja">Queja</option>
             <option value="reclamo">Reclamo</option>
             <option value="sugerencia">Sugerencia</option>
+            <option value="sugerencia">Felicitaciones</option>
+
           </select>
         </div>
 
@@ -79,7 +90,12 @@
           <button type="submit" class="submit-btn">Enviar</button>
         </div>
       </form>
+     </div>
     </div>
+    <div class="col-md-3 d-none d-md-block text-center">
+      <img src="img/papas.png" alt="papas" width="200" height="200">
+    </div>
+  </div>
   </section>
 
   <footer class="bg-dark text-white py-5">

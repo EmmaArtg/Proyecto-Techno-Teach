@@ -1,17 +1,22 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #6e3b16 , #f99b1c);
-    text-shadow: 6px 6px 10px rgba(0,0,0,0.4);
-
-}
-.brand-highlight{
-    color:#ff9900;
-    border-color:#000;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6e3b16, #f99b1c);
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
 }
 
-.parrafo{
+.inicio {
+  background-image: url(img/fondo.jpg);
+  background-size: cover;
+}
+
+.brand-highlight {
+  color: #ff9900;
+  border-color: #000;
+}
+
+.parrafo {
   color: #E8D9C2;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -41,50 +46,51 @@ body{
   height: 3px;
   background-color: #ff9900;
 }
-.hero-section{
-    background-size: cover;
-    min-height: calc(100vh - 56px);
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    text-align: center; 
-    padding: 2rem 1rem; 
-    color: #fff; 
+
+.hero-section {
+  background-size: cover;
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
 }
 
-.hero-section h1{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.hero-section p{
-    font-size: 20px;
-    color: #f5e0c3;
-    max-width: 800px;
+.hero-section p {
+  font-size: 20px;
+  color: #f5e0c3;
+  max-width: 800px;
 }
 
-.social-icons a{
-    margin: 0 5px;
-    color: #fff;
-    font-size: 30px;
+.social-icons a {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 30px;
 }
 
 .social-icons a:hover {
-    color: #fca311;
+  color: #fca311;
 }
 
 .menu-card {
-  background-color: #f5e0c3;
+  background-color: #ff9900;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
-  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
   box-shadow: 200 8px 25px #000;
 }
 
@@ -93,7 +99,8 @@ body{
   height: 200px;
   transition: transform 0.4s ease;
 }
-.menu-card:hover img{
+
+.menu-card:hover img {
   transform: scale(1.1);
 }
 
@@ -111,27 +118,25 @@ body{
   color: #000;
   font-size: 0.95rem;
 }
-.botones {
-  margin: 2rem 0;
-  text-align: center;
-
-}
 
 .botones a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
   background-color: #fca311;
   color: #411f0f;
-  text-decoration: none;
-  border-radius: 10px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .botones a:hover {
-  background-color: #411f0f !important;
+  background-color: #411f0f;
   color: #fca311;
+  transform: scale(1.05);
 }
 
 iframe {
@@ -142,98 +147,78 @@ iframe {
   border-radius: 10px;
   margin-top: 10px;
 }
-.loguito{
-    color:#F9B233;
-}
-.submit {
-  display: inline-block;
-  padding: 12px 15px;
-  font-size: 12px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #F9B233;
-  border: none;
-  border-radius: 15px;
+
+.loguito {
+  color: #F9B233;
 }
 
-.submit:hover {background-color: #411f0f}
+img {
+  background-size: cover;
+}
 
-.submit:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-img{      
-    background-size: cover;
-}
 .category-box {
-      border: 4px solid #000; 
-      border-radius: 15px;      
-      padding: 1.5rem;   
-      margin-top: 2rem;     
-      background-color: rgba(0, 0, 0, 0.60);
+  border: 4px solid #000;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.60);
 }
+
 .container2 {
+  background-color: #F9B233;
   max-width: 600px;
   margin: 0 auto;
-  background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-}
-
 .form-group {
- margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: normal;
 }
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea,
 select {
- width: 100%;
- padding: 10px;
- border: 1px solid #ddd;
- border-radius: 4px;
- box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 textarea {
   height: 100px;
-        }
+}
 
 .required::after {
   content: " *";
   color: red;
 }
-        
+
 .submit-btn {
-  background-color: #4CAF50;
+  background-color: #212529;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  width: 100%;
+  width: 50%;
 }
-        
+
 .submit-btn:hover {
-  background-color: #45a049;
+  background-color: #000;
 }
+
 .btn-carta {
   background-color: #fca311;
   color: #411f0f;
@@ -242,7 +227,7 @@ textarea {
   border-radius: 30px;
   padding: 14px 28px;
   font-size: 18px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
@@ -251,5 +236,44 @@ textarea {
 .btn-carta:hover {
   background-color: #411f0f;
   color: #fca311;
+  transform: scale(1.05);
+}
+
+.graphic {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+canvas {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.historia-section {
+  color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.historia-section h2 {
+  font-size: 2.8rem;
+  color: #000;
+}
+.historia-section p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.7;
+}
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease-in-out;
+}
+.carousel-item img:hover {
   transform: scale(1.05);
 }

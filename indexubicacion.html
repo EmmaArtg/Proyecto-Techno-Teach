@@ -12,12 +12,13 @@
 
 <body>
 
- <nav id="navbar" class="navbar navbar-expand-lg bg-dark">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">
-        <img src="logo.png" alt="logo" width="70" height="65"><span class="brand-highlight"> El Rancho De Juancho</span>
+        <img src="img/logo.png" alt="logo" width="70" height="65"><span class="brand-highlight"> El Rancho De Juancho</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -34,6 +35,10 @@
           <li class="nav-item">
             <a class="nav-link" href="formulario.html">Escribenos PQRSF</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grafica.html">Estadísticas</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -42,13 +47,19 @@
 
   <section class="hero-section text-dark">
     <div class="container text-center">
-      <!-- titulo con parte resaltada -->
       <h1 class="mb-4">¿Cómo llegar a <span class="brand-highlight">El Rancho de Juancho</span>?</h1>
 
-      <!-- botones pa abrir maps y waze -->
-      <div class="botones mb-5">
-        <a href="https://maps.app.goo.gl/kDuxxq44roqpiBrd6" target="_blank">📍 Ver en Google Maps</a>
-        <a href="https://waze.com/ul/hd34k7302f" target="_blank">🚗 Abrir en Waze</a>
+      <div class="row justify-content-center">
+        <div class="botones col-md-4 mb-4">
+        <a href="https://maps.app.goo.gl/kDuxxq44roqpiBrd6" target="_blank"><i class="bi bi-geo-alt-fill"></i>
+          Ver en Google Maps
+        </a>
+       </div>
+       <div class="botones mb-4 col-md-4">
+        <a href="https://waze.com/ul/hd34k7302f" target="_blank"><i class="bi bi-map-fill"></i>
+          Ver en Waze
+        </a>
+       </div>
       </div>
 
       <h2 class="mb-4"><strong>Conóce como llegar</strong></h2>
@@ -61,12 +72,10 @@
     </div>
   </section>
 
-  <!-- footer, lo de abajo con info del sitio -->
   <footer class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
 
-        <!-- colum1, correo y whatsapp -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Información</h5>
           <ul class="list-unstyled">
@@ -85,11 +94,11 @@
           </ul>
         </div>
 
-        <!-- colum2, el instagram -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Síguenos</h5>
           <div class="d-flex">
-            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3"
+              target="_blank">
               <i class="bi bi-facebook"></i>
             </a>
             <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4">
@@ -98,7 +107,6 @@
           </div>
         </div>
 
-        <!-- colum3, direccion y horarios -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Dirección</h5>
           <p class="mb-0">
@@ -108,10 +116,8 @@
         </div>
       </div>
 
-      <!-- linea finita pa separar -->
       <hr class="border-light" />
 
-      <!-- parte final legal-->
       <div class="text-center pt-3">
         © 2025 <strong>El Rancho de Juancho</strong>. Todos los derechos reservados.<br>
         NIT: 81710002
@@ -119,8 +125,8 @@
     </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="funcion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="funcion.js"></script>
 
 
 </body>
