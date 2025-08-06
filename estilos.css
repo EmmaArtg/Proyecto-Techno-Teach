@@ -1,35 +1,26 @@
-/* aqui el body, ponele la letra bonita y le mete un fondo q va de marron oscuro a otro marron menos feo */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #6e3b16 , #f99b1c);
     text-shadow: 6px 6px 10px rgba(0,0,0,0.4);
 
 }
-/* esto resalta algo q se llama brand no se, pero el color es como mostaza brillante y una sombra pa q se note */
 .brand-highlight{
     color:#ff9900;
     border-color:#000;
 }
 
-/* el texto normalito, clarito, sombra pa q no se pierda */
 .parrafo{
   color: #E8D9C2;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-}
-/* --- NAVBAR (MENÚ DE NAVEGACIÓN) --- */
-#navbar {
-  background-color: #ffffff; /* Fondo blanco */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil */
-  padding-top: 10px;
-  padding-bottom: 10px;
+
 }
 
 .navbar-brand {
-  color: #212529 !important; /* Color oscuro para el logo */
+  color: #212529 !important;
 }
 
 .nav-link {
-  color: #fff !important; /* Color gris oscuro para los enlaces */
+  color: #fff !important;
   font-weight: 500;
   margin: 0 10px;
   position: relative;
@@ -37,7 +28,7 @@ body{
 }
 
 .nav-link:hover {
-  color: #ff9900 !important;
+  color: #ff9900;
 }
 
 .nav-link.active::after,
@@ -50,7 +41,6 @@ body{
   height: 3px;
   background-color: #ff9900;
 }
-/* esta seccion es la principal, la portada, toda centrada y alta, fondo q se repite no */
 .hero-section{
     background-size: cover;
     min-height: calc(100vh - 56px);
@@ -63,49 +53,48 @@ body{
     color: #fff; 
 }
 
-/* titulo grande grande con peso y espacio abajo */
 .hero-section h1{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-/* el parrafito de abajo del titulo, clarito pa q combine */
 .hero-section p{
     font-size: 20px;
     color: #f5e0c3;
     max-width: 800px;
 }
 
-/* los iconitos de redes, centrados, blancos y grandes */
 .social-icons a{
     margin: 0 5px;
     color: #fff;
     font-size: 30px;
 }
 
-/* y si le pasas el mouse, naranja otra vez, claro */
 .social-icons a:hover {
     color: #fca311;
 }
 
 .menu-card {
-  background-color: #ffffff;
+  background-color: #f5e0c3;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra más definida */
-  overflow: hidden; /* Para que la imagen respete el borde redondeado */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+  overflow: hidden; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-5px); /* Efecto de levantar la tarjeta */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px); 
+  box-shadow: 200 8px 25px #000;
 }
 
 .menu-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  transition: transform 0.4s ease;
+}
+.menu-card:hover img{
+  transform: scale(1.1);
 }
 
 .menu-card .card-body {
@@ -119,16 +108,15 @@ body{
 }
 
 .menu-card p {
-  color: #666;
+  color: #000;
   font-size: 0.95rem;
 }
-/* botones del medio, se alinean al centro y tienen margen vertical */
 .botones {
   margin: 2rem 0;
   text-align: center;
 
 }
-/* estilo de los botones, fondo naranja pollito, texto marron, redondito */
+
 .botones a {
   display: inline-block;
   margin: 10px;
@@ -141,13 +129,11 @@ body{
   transition: background-color 0.3s ease;
 }
 
-/* cuando pasa el mouse, cambia de color y texto blanco */
 .botones a:hover {
   background-color: #411f0f !important;
   color: #fca311;
 }
 
-/* pa meter videos o maps o lo q sea, centrado, redondeao, sin borde */
 iframe {
   width: 100%;
   max-width: 720px;
@@ -182,4 +168,88 @@ iframe {
 }
 img{      
     background-size: cover;
+}
+.category-box {
+      border: 4px solid #000; 
+      border-radius: 15px;      
+      padding: 1.5rem;   
+      margin-top: 2rem;     
+      background-color: rgba(0, 0, 0, 0.60);
+}
+.container2 {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+ margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+        }
+
+.required::after {
+  content: " *";
+  color: red;
+}
+        
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+        
+.submit-btn:hover {
+  background-color: #45a049;
+}
+.btn-carta {
+  background-color: #fca311;
+  color: #411f0f;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-carta:hover {
+  background-color: #411f0f;
+  color: #fca311;
+  transform: scale(1.05);
 }

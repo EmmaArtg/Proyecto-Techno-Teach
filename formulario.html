@@ -11,19 +11,19 @@
 </head>
 
 <body>
-
   <nav id="navbar" class="navbar navbar-expand-lg bg-dark">
     <div class="container">
       <a class="navbar-brand fw-bold fs-4" href="indexinicio.html">
         <img src="logo.png" alt="logo" width="70" height="65"><span class="brand-highlight"> El Rancho De Juancho</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="indexmenu.html">Menú</a>
+            <a class="nav-link" href="indexmenu.html">Menú</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="indexubicacion.html">Ubicación</a>
@@ -40,46 +40,52 @@
   </nav>
 
 
-<!-- Sección principal -->
-<section class="hero-section text-dark container mt-5">
-  <div class="row align-items-center">
+  <section class="hero-section text-dark container mt-5">
+    <div class="container2">
+      <h1>Formulario PQRSF</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="tipo_solicitud" class="required">Indique el tipo de Solicitud</label>
+          <select id="tipo_solicitud" name="tipo_solicitud" required>
+            <option value="">Seleccione una opción</option>
+            <option value="peticion">Petición</option>
+            <option value="queja">Queja</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+        </div>
 
-  <h2>Formulario de Contacto</h2>
+        <div class="form-group">
+          <label for="nombre" class="required">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
 
-  <form action="/procesar.php" method="post">
-    
-    <!-- Nombre -->
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-    
-    <!-- Correo electrónico -->
-    <label for="email">Correo electrónico:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <!-- Número de teléfono -->
-    <label for="telefono">Teléfono:</label><br>
-    <input type="tel" id="telefono" name="telefono"><br><br>
-    
-    <!-- Asunto -->
-    <label for="asunto">Asunto:</label><br>
-    <input type="text" id="asunto" name="asunto"><br><br>
-    
-    <!-- Mensaje -->
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea><br><br>
-    
-    <!-- Botón de enviar -->
-    <button type="submit" class="submit">Enviar</button>
+        <div class="form-group">
+          <label for="celular" class="required">Celular</label>
+          <input type="tel" id="celular" name="celular" required>
+        </div>
 
-  </form>
-</section>
+        <div class="form-group">
+          <label for="correo" class="required">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
 
-  <!-- repite footer por si acaso-->
+        <div class="form-group">
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <footer class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
 
-        <!-- colum1 info de contacto, email y whatsapp -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Información</h5>
           <ul class="list-unstyled">
@@ -90,7 +96,6 @@
               </a>
             </li>
             <li>
-              <!-- wa directo, con iconito y numero -->
               <a href="https://wa.me/3205000990" target="_blank" class="text-white fs-6 me- text-decoration-none">
                 <i class="bi bi-whatsapp"></i>
                 +57 320 500 0990
@@ -99,20 +104,19 @@
           </ul>
         </div>
 
-        <!-- colum2 red social, solo insta pero se ve bien -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Síguenos</h5>
           <div class="d-flex">
-            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3" target="_blank">
-            <i class="bi bi-facebook"></i>
-          </a>
+            <a href="https://www.facebook.com/profile.php?id=61579057466940" class="text-white fs-4 me-3"
+              target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
             <a href="https://www.instagram.com/el_rancho_de_juanchoo" target="_blank" class="text-white fs-4">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
         </div>
 
-        <!-- colum3 direccion fisica y horarios -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold mb-3">Dirección</h5>
           <p class="mb-0">
@@ -120,13 +124,8 @@
             Abierto de Viernes a Domingo: 5:00 PM - 12:00 AM
           </p>
         </div>
-
       </div>
-
-      <!-- linea separadora -->
       <hr class="border-light" />
-
-      <!-- el copyright, con año, nombre y NIT pa legalidad -->
       <div class="text-center pt-3">
         © 2025 <strong>El Rancho de Juancho</strong>. Todos los derechos reservados.<br>
         NIT: 81710002
@@ -134,7 +133,9 @@
     </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="funcion.js"></script>
+
 
 </body>
 
